@@ -1,0 +1,44 @@
+ul li{
+    display: inline-block;
+}
+
+#logo {
+    float: left;
+}
+
+li {
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+ul {
+    background-color: black;
+    color: gray;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li:hover {
+    background-color: rgb(138, 138, 138);
+    color: black;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: black;
+}

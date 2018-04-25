@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background-color: rgb(228, 228, 228);
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 3em;
+    /*display: grid | inline-grid | subgrid;*/
+}
+
+table, tr, td, th {
+    border: 2px solid rgb(175, 175, 175);
+    border-collapse: collapse;
+    padding: .3em;
+}
+
+th {
+    font-size: 1.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: rgb(100, 100, 100);
+    color: rgb(206, 206, 206);
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(192, 192, 192);
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(228, 228, 228);
+}
+
+input {
+    border-radius: .5em;
+    border: solid black 1px;
+    margin-bottom: 1em;
+    color: rgb(57, 216, 57);
+    background-color: black;
+    padding: .20em;
+}

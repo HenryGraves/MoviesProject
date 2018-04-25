@@ -1,0 +1,33 @@
+<h1>
+  {{movie.title}}
+  <app-star></app-star>
+</h1>
+
+
+<div class="row">
+  <div class="col-lg-4">
+    <p class="price"> ${{movie.price}} </p>
+  </div>
+  <div class="col-lg-4">
+    <img src='{{movie.imageURL}}' height="500" width="325">
+  </div>
+  <div class="col-lg-4">
+    <h2>Synopsis: (unimplemented due to time)</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Nullam eget ante at risus placerat viverra non eu mi. 
+      Fusce eros leo, ultricies eu fringilla in, volutpat quis enim. 
+      Integer eleifend ex at augue posuere elementum. Morbi lacinia sem 
+      sit amet lacus varius, sit amet euismod velit lacinia. 
+      Nulla euismod nec lectus in pellentesque. Duis dapibus aliquet 
+      nunc in accumsan. Morbi eget ipsum sit amet nibh efficitur 
+      malesuada. Vestibulum ultricies sit amet orci porttitor efficitur. 
+      In tempus sapien nec tincidunt egestas.</p>
+      <!-- would pull synopsis info from json using movie.synop or something
+        of that nature -->
+  </div>
+
+</div>
+
+
+<a class='back-button' (click)='onClick()'>
+  < Return </a>

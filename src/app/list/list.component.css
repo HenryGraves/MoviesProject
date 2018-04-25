@@ -1,0 +1,17 @@
+.table-row:hover {
+    cursor: pointer;
+    color: rgb(14, 221, 187);
+    background-color: white;
+}
+
+table {
+    padding-bottom: 5em;
+}
+
+.space {
+    padding-bottom: 3em;
+}
+
+tr:hover {
+    color: black;
+}

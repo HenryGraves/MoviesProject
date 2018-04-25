@@ -1,0 +1,27 @@
+<form>
+    <label for="input">Filter:</label>
+  <input name="input" placeholder="type here!" [(ngModel)]='listFilter'>
+  </form>
+  <table *ngIf='filteredMovies && filteredMovies.length > 0'>
+    <tr> 
+      <th></th>
+      <th>Title</th>
+      <th>Price</th>
+      <th>Release Date</th>
+      <th>Star Rating</th>
+    </tr>
+    
+    <tr [routerLink]="['/detail', movie.uid]"  class="table-row" *ngFor='let movie of filteredMovies'>
+        
+        <td><img src= "{{ movie.imageURL }}" alt='{{ movie.imageURL }}' height="42" width="28"></td>
+        <td>{{ movie.title }}({{ movie.uid }})</td>
+        <td>{{ movie.price | currency }}</td>
+        <td>{{ movie.releaseDate }}</td>
+        <td>
+          <app-star 
+          [rating]='movie.starRating'
+          (ratingClicked) = 'onRatingClicked($event)'>
+        </app-star>
+      </td>
+    </tr>
+  </table>
